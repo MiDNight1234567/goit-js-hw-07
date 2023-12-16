@@ -9,13 +9,13 @@ const createBtn = document.querySelector('.create-btn');
 const destroyBtn = document.querySelector('.destroy-btn');
 const boxes = document.querySelector('.boxes');
 
-createBtn.addEventListener('click', event => {
+createBtn.addEventListener('click', () => {
   destroyBoxes();
   const totalBoxes = input.value;
   createBoxes(totalBoxes);
 });
 
-destroyBtn.addEventListener('click', event => {
+destroyBtn.addEventListener('click', () => {
   destroyBoxes();
 });
 
